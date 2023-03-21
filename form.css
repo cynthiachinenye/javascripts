@@ -23,9 +23,9 @@
     background-color: blueviolet;
     color:#fff;
 }
-.stage{
+.stages{
     height:100%;
-    width:500px;
+    width:600px;
     margin:auto;
     border:none;
     border-radius:10px;
@@ -35,7 +35,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
-.stage h3{
+.stages h3{
     text-align:center;
     font-size:25px;
     font-weight: 200;
@@ -43,57 +43,38 @@
     padding-bottom: 40px;
 
 }
-.stage input{
+.stages input{
     padding: 20px ;
     height: 40px;
-    margin:10px;
-    
+    width:400px;
+    margin:10px;  
+}
+.stages label{
+    font-size:18px;
 }
 
-.stage #btn2{
-    height:40px;
-    width:100px;
+.stages #btn2{
+    height:50px;
+    width:120px;
     border:none;
-    margin: 10px 300px;
+    margin: 10px 10px;
     background-color: blueviolet;
     color:aliceblue;
+    border-radius:10px;
 }
-.stage #btn{
-    height:40px;
-    width:100px;
-    border:none;
-    margin: 10px 300px;
-    background-color: blueviolet;
-    color:aliceblue;
-}
-.stage #btn3{
-    height:40px;
-    width:100px;
-    border:none;
-    margin: 10px 300px;
-    background-color: blueviolet;
-    color:aliceblue;
-}
-
-.stage button{
-    height:40px;
-    width:350px;
-    border:none;
-    margin: 10px;
-    background-color: blueviolet;
-    color:aliceblue;
-}
-
-
-
-.stage .btn{
-    width:360px;
+ .btn{
     display:flex;
     justify-content:space-between;
-    
+    width:500px;
 }
-.stage .btn2{
-    margin-left:100px;
+.stages #btn3{
+    height:50px;
+    width:120px;
+    border:none;
+    margin: 10px 10px;
+    background-color: blueviolet;
+    color:aliceblue;
+    border-radius:10px;
 }
 
 

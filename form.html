@@ -15,22 +15,21 @@
             <div class="fpara"><p>Already have an account? <button>sign in</button></p></div>
 
         </div>
-        
-        <div class="stage">
-            <form id="form">
+
+        <div class="stages">
+            <form>
+                <div  id="stage1">
                 <h3>Sign Up Info</h3>
                 <label>Email Address</label><br>
                 <input type="email address" id="email-address"><br>
                 <label>Password</label><br>
                 <input type="password" id="password"><br>
                 <label>Confirm Password</label><br>
-                <input type="password" id="confirm"><br>
-                <button type="submit" id="btn">Next<i class="fa-light fa-arrow-right"></i></button>
+                
+            </div>
             
-            
-            </form>
 
-            <form id="form1">
+            <div id="stage2">
                 <h3>Personal Info</h3>
                 <label>User Name</label><br>
                 <input type="text" id="name"><br>
@@ -39,11 +38,11 @@
                 <label>Last Name</label><br>
                 <input type="text"id="last"><br>
                 
-                
+            </div>    
             
-            </form>
+        
 
-            <form id="form2">
+             <div id="stage3">
                 <h3>Professional Info</h3>
                 <label> Current Company </label><br>
                 <input type="text" id="com"><br>
@@ -51,16 +50,18 @@
                 <input type="text" id="total"><br>
                 <label>designation</label><br>
                 <input type="text" id="best"><br>
+             </div>
+             </form>
                 <div class="btn">
-                    <button type="submit"id="btn3"><i class="fa-light fa-arrow-left"></i>Back</button>
-                    <button type="submit"id="btn2">Next<i class="fa-light fa-arrow-right"></i></button>
+                    <button type="submit" id="btn3"><i class="fa-light fa-arrow-left"></i>Back</button>
+                    <button type="submit" id="btn2">Next<i class="fa-light fa-arrow-right"></i></button>
                 
                 </div>
                 
             
             
-            </form>
-        </div>
+            </div>    
+        
 
 
 
@@ -69,5 +70,5 @@
     </div>
     
 </body>
-<script src="form.js"></script>
+<script src="./form.js"></script>
 </html>

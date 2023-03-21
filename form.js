@@ -1,43 +1,59 @@
-let stage = 0;
+let stages = 0;
 
-const form = document.querySelector("#form")
-const form1= document.querySelector("#form1")
-const form2= document.querySelector("#form2")
-
-var next = document.querySelector('#btn')
-.addEventListener("click", ()=>showNext());
+const stage1 = document.querySelector("#stage1")
+const stage2= document.querySelector("#stage2")
+const stage3= document.querySelector("#stage3")
 
 var next = document.querySelector('#btn2')
-.addEventListener("click", ()=>showNext());
+next.addEventListener("click", showNext);
 
 var back = document.querySelector('#btn3')
-.addEventListener("click", ()=>showNext());
+back.addEventListener("click", showBack);
 
-form.style.display = 'none';
-form1.style.display = 'none';
-form2.style.display ='none';
+stage1.style.display = 'none';
+stage2.style.display = 'none';
+stage3.style.display ='none';
 
 function even(){
-    if(stage === 0){
-        form.style.display = "block"
-        next.style.visibility="hidden"
+    if(stages === 0){
+        stage1.style.display = "block"
+        stage2.style.display= "none"
+        stage3.style.display="none"
+        back.style.visibility="hidden"
+        next.style.display="block"
     }
-    if(stage === 1){
-        form1.style.display = "block"
+    if(stages === 1){
+       stage2.style.display = "block"
+       stage1.style.display = "none"
+        stage3.style.display="none"
+        back.style.visibility="visible"
+        next.style.display = "block"
     }
-    if(stage === 2)
+    if(stages === 2)
     {
-        form2.style.display = "block"
+       stage3.style.display = "block"
+        stage1.style.display = "none"
+        stage2.style.display= "none"
+        back.style.visibility="visible"
+        next.style.display = "block"
+       
+        
     }
 
         
 }
 even();
  function showNext (){
-     
+    if (stages ===2) {return}
+    stages ++
+    even()
 }
- console.log("form1");
-    // stage +=1
+function showBack (){
+    stages --
+    even()
+}
+ console.log(stages);
+    
 
 /*const cap = () => {
     var userName = prompt("what is your name"); 
